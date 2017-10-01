@@ -1,0 +1,43 @@
+### bin
+samuneiru
+
+### image file
+*.jpg
+*.jpeg
+*.png
+*.gif
+
+### https://raw.github.com/github/gitignore/9ef1596ac14f77ddd79a74e3f621ee117022e107/Global/vim.gitignore
+
+# swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
+# session
+Session.vim
+# temporary
+.netrwhist
+*~
+# auto-generated tag files
+tags
+
+
+### https://raw.github.com/github/gitignore/9ef1596ac14f77ddd79a74e3f621ee117022e107/go.gitignore
+
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test binary, build with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Project-local glide cache, RE: https://github.com/Masterminds/glide/issues/736
+.glide/
+
+

@@ -14,7 +14,7 @@ import (
 	"os"
 )
 
-const VERSION = "1.0.1"
+const VERSION = "1.0.2"
 
 func Resize(ifile string, ofile string, width uint, height uint, oformat string) int {
 	//
@@ -103,13 +103,11 @@ func main() {
 
 	if *width == 0 && *height == 0 {
 		log.Println("You must set -width or -height")
-		flag.Parse()
 		os.Exit(2)
 	}
 
 	if *width != 0 && *height != 0 {
 		log.Println("You can't set both -width and -height")
-		flag.Parse()
 		os.Exit(2)
 	}
 

@@ -14,7 +14,7 @@ import (
 	"os"
 )
 
-const VERSION = "1.0.0"
+const VERSION = "1.0.1"
 
 func Resize(ifile string, ofile string, width uint, height uint, oformat string) int {
 	//
@@ -59,11 +59,8 @@ func Resize(ifile string, ofile string, width uint, height uint, oformat string)
 		out, err = os.Create(ofile)
 		if err != nil {
 			log.Fatal(err)
+			return 1
 		}
-	}
-	if err != nil {
-		log.Fatal(err)
-		return 1
 	}
 
 	if oformat == "-" {

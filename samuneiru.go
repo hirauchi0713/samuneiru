@@ -67,16 +67,20 @@ func Resize(ifile string, ofile string, width uint, height uint, oformat string)
 		oformat = fmt
 	}
 	if oformat == "png" {
-		png.Encode(out, m)
+		err = png.Encode(out, m)
 	} else if oformat == "gif" {
 		opt := gif.Options{}
 		opt.NumColors = 256
 		opt.Quantizer = median.Quantizer(256)
-		gif.Encode(out, m, &opt)
+		err = gif.Encode(out, m, &opt)
 	} else {
 		opt := jpeg.Options{}
 		opt.Quality = 100
-		jpeg.Encode(out, m, &opt)
+		err = jpeg.Encode(out, m, &opt)
+	}
+	if err != nil {
+		log.Fatal(err)
+		return 1
 	}
 
 	return 0

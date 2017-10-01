@@ -14,7 +14,7 @@ import (
 	"os"
 )
 
-const VERSION = "1.0.2"
+const VERSION = "1.0.3"
 
 func Resize(ifile string, ofile string, width uint, height uint, oformat string) int {
 	//

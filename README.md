@@ -1,4 +1,4 @@
-samuneiru (thumbnail) Ver.1.0.2
+samuneiru (thumbnail) Ver.1.0.3
 ===============================
 
 これはなに？
@@ -21,7 +21,7 @@ $ samuneiru -width 500 -ifile input.png -ofile output.jpg -oformat jpg
 
 # HELP
 $ samuneiru -help
-samuneiru: The image thumbnailer. (Ver.1.0.2)
+samuneiru: The image thumbnailer. (Ver.1.0.3)
 usage: ./samuneiru [-width | -height] [other options]
   -height uint
       resize height. (0 is keep aspect ratio)
